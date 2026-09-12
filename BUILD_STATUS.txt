@@ -1,0 +1,11 @@
+Multyfi Kotak Neo Approval Assistant v2.6 — FINAL NO-STATIC-IP BUILD
+MODE: APPROVAL ONLY
+
+- No Kotak Neo place/modify/cancel order endpoint is included.
+- APPROVE performs a final LTP/funds/position preflight, copies the refreshed MIS ticket, and opens Kotak Neo.
+- EXIT rechecks remaining MIS quantity and pending exit orders, then opens Kotak Neo for manual confirmation.
+- No static public IP is required for broker order submission because this build never submits broker orders.
+- BUY target = entry + 3 points; SELL target = entry - 3 points.
+- Stop-loss = advisory SL exactly; it is never changed by the app.
+- Entry-move protection remains enabled (MARKET / advisory-bound LIMIT / block).
+- GitHub Actions workflow builds app-debug.apk.
